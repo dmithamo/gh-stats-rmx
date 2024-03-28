@@ -1,7 +1,5 @@
 import type { MetaFunction } from "@remix-run/node";
 
-import "../tailwind.css";
-
 export const meta: MetaFunction = () => {
   return [
     { title: "New Remix App" },
@@ -11,8 +9,9 @@ export const meta: MetaFunction = () => {
 
 export default function Index() {
   return (
-    <div className="text-red-500 h-screen w-full flex items-center justify-center">
+    <div className="text-red-500 h-screen w-full flex items-center justify-center text-4xl">
       Hello, world!
+      <i className="ri-github-fill ri-4x"></i>
     </div>
   );
 }
