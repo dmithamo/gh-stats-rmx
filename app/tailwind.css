@@ -3,24 +3,24 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: "IBM Plex Sans";
+  font-family: 'IBM Plex Sans';
   font-style: normal;
   font-weight: 400;
-  src: local(""), url("/fonts/IBMPlexSans-Regular.ttf");
+  src: local(''), url('/fonts/IBMPlexSans-Regular.ttf');
 }
 
 @font-face {
-  font-family: "IBM Plex Sans Bold";
+  font-family: 'IBM Plex Sans Bold';
   font-style: normal;
   font-weight: 700;
-  src: local(""), url("/fonts/IBMPlexSans-Bold.ttf");
+  src: local(''), url('/fonts/IBMPlexSans-Bold.ttf');
 }
 
 @font-face {
-  font-family: "IBM Plex Sans ExtraLight";
+  font-family: 'IBM Plex Sans ExtraLight';
   font-style: normal;
   font-weight: 100;
-  src: local(""), url("/fonts/IBMPlexSans-ExtraLight.ttf");
+  src: local(''), url('/fonts/IBMPlexSans-ExtraLight.ttf');
 }
 
 :root {

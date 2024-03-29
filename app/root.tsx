@@ -1,13 +1,7 @@
-import {
-  Links,
-  Meta,
-  Outlet,
-  Scripts,
-  ScrollRestoration,
-} from "@remix-run/react";
+import { Links, Meta, Outlet, Scripts, ScrollRestoration } from '@remix-run/react';
 
-import "remixicon/fonts/remixicon.css";
-import "./tailwind.css";
+import 'remixicon/fonts/remixicon.css';
+import './tailwind.css';
 
 export function Layout({ children }: { children: React.ReactNode }) {
   return (
