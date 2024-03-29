@@ -1,13 +1,13 @@
-import { AppHeader } from '../components/app-header';
+import { Outlet } from '@remix-run/react';
+import { AppHeader } from '~/components/app-header';
 
-type Props = {
-  children: React.ReactNode;
-};
-export default function DashboardLayout({ children }: Props) {
+export default function DashboardLayout() {
   return (
     <main>
       <AppHeader />
-      <section className="p-2">{children}</section>
+      <section className="p-2">
+        <Outlet />
+      </section>
     </main>
   );
 }

@@ -21,7 +21,7 @@ const logoSizeClasses = (size?: LogoSize): { iconSize: IconSize; textSize: strin
     case LogoSize.small:
       return { iconSize: IconSize.small, textSize: 'text-sm' };
     case LogoSize.huge:
-      return { iconSize: IconSize.huge, textSize: 'text-3xl' };
+      return { iconSize: IconSize.huge, textSize: 'text-6xl' };
     default:
       return { iconSize: IconSize.default, textSize: 'text-2xl' };
   }
@@ -35,13 +35,13 @@ export const AppLogo: React.FC<Props> = ({ size }) => {
   return (
     <Link
       to={'/'}
-      className={clsx('text-accent flex select-none items-center font-bold uppercase', textSize, {
+      className={clsx('text-accent flex select-none items-center', {
         'gap-2': size != LogoSize.huge,
         'gap-4': size === LogoSize.huge,
       })}
     >
-      <SVGIcon name="ri-donut-chart-fill" size={iconSize} className="text-accent" />
-      <p className="text-fore text-nowrap font-extralight">GH Stats</p>
+      <SVGIcon name="ri-donut-chart-fill" size={iconSize} />
+      <p className={clsx('text-fore text-nowrap font-extralight uppercase', textSize)}>GH Stats</p>
     </Link>
   );
 };
